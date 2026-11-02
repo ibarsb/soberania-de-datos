@@ -1,0 +1,102 @@
+/* ==== Tema global (dark slate) — antes en el <style> de la diapositiva 1,
+   que Slidev compilaba con ámbito (scoped) y no llegaba a las demás diapositivas ==== */
+
+html, body {
+  background:
+    radial-gradient(1100px 600px at 85% -10%, rgba(99, 102, 241, 0.20), transparent 60%),
+    radial-gradient(900px 500px at -10% 110%, rgba(34, 211, 238, 0.10), transparent 55%),
+    #0a0e1a;
+  color: #e8ecf8;
+}
+.slidev-layout { color: #e8ecf8; padding: 1.4rem 2rem; }
+.slidev-layout h1 { color: #ffffff; font-size: 1.3rem; margin-bottom: 0.7rem; }
+.slidev-layout h3 { color: #ffffff; }
+
+.card {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgba(125, 155, 255, 0.30);
+  border-radius: 12px;
+  background: linear-gradient(165deg, rgba(20, 26, 54, 0.72), rgba(10, 14, 26, 0.55));
+  box-shadow: 0 8px 26px rgba(2, 6, 16, 0.45);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+.card p { margin: 0.14rem 0; }
+.card-title { margin: 0 0 0.25rem; font-size: 0.85rem; font-weight: 700; color: #ffffff; }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.1rem 0.55rem;
+  border: 1px solid;
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.b-sky     { border-color: rgba(56, 189, 248, 0.6);  background: rgba(56, 189, 248, 0.12);  color: #7dd3fc; }
+.b-violet  { border-color: rgba(167, 139, 250, 0.6); background: rgba(167, 139, 250, 0.12); color: #c4b5fd; }
+.b-emerald { border-color: rgba(52, 211, 153, 0.6);  background: rgba(52, 211, 153, 0.12);  color: #6ee7b7; }
+.b-rose    { border-color: rgba(251, 113, 133, 0.6); background: rgba(251, 113, 133, 0.12); color: #fda4af; }
+.b-amber   { border-color: rgba(251, 191, 36, 0.6);  background: rgba(251, 191, 36, 0.12);  color: #fcd34d; }
+
+.hero-card {
+  border: 1px solid rgba(167, 139, 250, 0.65);
+  border-radius: 16px;
+  background: linear-gradient(150deg, rgba(110, 90, 240, 0.22), rgba(10, 14, 26, 0.72) 60%);
+  box-shadow: 0 0 26px rgba(167, 139, 250, 0.25), 0 10px 30px rgba(2, 6, 16, 0.5);
+  padding: 0.7rem 1.2rem;
+}
+.hero-card blockquote { margin: 0; border: none; background: none; padding: 0; font-size: 0.98rem; line-height: 1.5; color: #ffffff; }
+
+.risk-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.12rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.risk-alto { border: 1px solid rgba(251, 113, 133, 0.8); background: rgba(251, 113, 133, 0.15); color: #fda4af; }
+.risk-medio { border: 1px solid rgba(251, 191, 36, 0.8); background: rgba(251, 191, 36, 0.14); color: #fcd34d; }
+.risk-bajo { border: 1px solid rgba(52, 211, 153, 0.8); background: rgba(52, 211, 153, 0.15); color: #6ee7b7; }
+
+.slidev-layout blockquote {
+  background: rgba(99, 102, 241, 0.08);
+  border-left: 3px solid rgba(129, 140, 248, 0.8);
+  border-radius: 0 10px 10px 0;
+  padding: 0.4rem 0.9rem;
+  color: #dbe4ff;
+}
+
+.jump-btn {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.4rem;
+  border: 1px solid rgba(56, 189, 248, 0.65);
+  border-radius: 999px;
+  padding: 0.22rem 0.85rem;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #7dd3fc;
+  background: rgba(56, 189, 248, 0.10);
+  transition: all 0.2s;
+}
+.jump-btn:hover {
+  border-color: #22d3ee;
+  color: #e0f2fe;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Compactación solo para la diapositiva 6 (matriz + acordeón) */
+.slidev-page-6 .card { font-size: 0.7rem; padding: 0.4rem 0.65rem; }
+.slidev-page-6 .card p { margin: 0.1rem 0; }
+.slidev-page-6 h1 { margin-bottom: 0.3rem; }

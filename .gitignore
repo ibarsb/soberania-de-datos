@@ -1,0 +1,19 @@
+# Dependencias
+node_modules/
+
+# Artefactos de Slidev
+.slidev
+dist/
+
+# Archivos temporales del sistema y del editor
+Thumbs.db
+.DS_Store
+*.log
+*.tmp
+~$*
+.env
+.env.*
+
+# Playwright (exportación a PDF/PNG de Slidev)
+playwright-report/
+test-results/
